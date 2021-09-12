@@ -1,0 +1,25 @@
+.navbarClass {
+    background-color: #4dd4ac;
+}
+
+.iconNavbar {
+    background-color: #237e636e;
+    padding: 7px 15px 7px 15px;
+    border-radius: 30px;
+    margin-bottom: 2px;
+}
+
+.icon {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.liHo {
+    text-align: center;
+}
+
+.liHo:hover {
+    background-color: #237e636e;
+    border-radius: 15px;
+    transition: .3s;
+}
