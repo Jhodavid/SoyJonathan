@@ -1,3 +1,9 @@
+body {
+    background-color: #e5eeeb;
+}
+
+/* NAVBAR */
+
 .navbarClass {
     background-color: #4dd4ac;
 }
@@ -6,11 +12,14 @@
     background-color: #237e636e;
     padding: 7px 15px 7px 15px;
     border-radius: 30px;
-    margin-bottom: 2px;
 }
 
-@media (max-width: 575px) {
-
+.iconNavbar:hover {
+    background-color: #237e636e;
+    padding: 5px 13px 5px 13px;
+    margin: 2px 2px 2px 2px;
+    border-radius: 30px;
+    transition: .3s;
 }
 
 .icon {
@@ -28,17 +37,139 @@
     transition: .3s;
 }
 
+/* SOBRE MI */
+
 .containerSobreMi {
-    background-color: #d1f8ec80;
+    background-color: #b4f5e180;
     margin-top: 10px;
     border-radius: 5px;
-    height: 460px;
+    height: 350px;
+    border: solid 1px #237e636e;
+}
+
+.h1YoSoy {
+    width: 100%;
+    height: 83px;
+    padding-top: 35px;
+    padding-right: 3%;
+    text-align: right;
+}
+
+.h3YoSoy {
+    width: 100%;
+    height: 68px;
+    padding-right: 3%;
+    text-align: right;
+    padding-bottom: 35px;
+}
+
+h1 {
+    animation-duration: 1s;
+    animation-name: h1Animation;
+}
+
+@keyframes h1Animation {
+    from {
+        margin-left: 150%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+h3 {
+    animation-duration: 1.3s;
+    animation-name: h3Animation;
+}
+
+@keyframes h3Animation {
+    from {
+        display: none;
+        margin-left: 150%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+.contentParrafoSobreMi {
+    margin: 15px 20px 20px 60px;
 }
 
 .parrafoSobreMi {
     text-align: initial;
+    padding-left: 5px;
+}
+
+.containerFotoPerfil{
+    text-align: center;
 }
 
 .imgPerfil {
     width: 350px;
+    padding: 20px;
+}
+
+@media (max-width: 992px) {
+    .h1YoSoy {
+        width: 100%;
+        height: 80px;
+        padding-top: 25px;
+        padding-bottom: 0px;
+        padding-right: 3%;
+        text-align: right;
+    }
+    .h3YoSoy {
+        width: 100%;
+        height: 60px;
+        padding-right: 3%;
+        text-align: right;
+        padding: 0px 3% 0px 0px;
+    }
+
+    .contentParrafoSobreMi {
+        margin: 0;
+        padding: 5px;
+    }
+    .containerSobreMi {
+        background-color: #b4f5e180;
+        margin-top: 10px;
+        border-radius: 5px;
+        height: 610px;
+    }
+    .imgPerfil {
+        width: 100%px;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .h1YoSoy {
+        width: 100%;
+        height: 70px;
+        padding-top: 25px;
+        padding-bottom: 0px;
+        padding-right: 3%;
+        margin: 0px;
+        text-align: right;
+    }
+    .h3YoSoy {
+        width: 100%;
+        height: 50px;
+        padding-right: 3%;
+        text-align: right;
+        margin: 0px;
+        padding: 0px 3% 0px 0px;
+    }
+    .contentParrafoSobreMi {
+        margin: 0px;
+        padding: 5px;
+    }
+    .containerSobreMi {
+        background-color: #b4f5e180;
+        margin-top: 5px;
+        border-radius: 5px;
+        height: 610px;
+    }
 }
