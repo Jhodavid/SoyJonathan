@@ -43,7 +43,7 @@ body {
     background-color: #b4f5e180;
     margin-top: 10px;
     border-radius: 5px;
-    height: 350px;
+    height: auto;
     border: solid 1px #237e636e;
 }
 
@@ -107,7 +107,8 @@ h3 {
 
 .imgPerfil {
     width: 350px;
-    padding: 20px;
+    padding: auto;
+    border-radius: 50px;
 }
 
 @media (max-width: 992px) {
@@ -207,3 +208,10 @@ h3 {
 
 /* PROYECTOS */
 
+.cardItems {
+    height: 190px;
+}
+
+.imgProyectos {
+    height: 220px;
+}
