@@ -110,14 +110,36 @@ h3 {
 .conocimientoItems {
     background-color: #74a5ac1e;
     border-radius: 5px;
-    padding: 3%;
+    padding: 5%;
     margin: 10px;
+    overflow: hidden;
 }
 
 .infoCono {
-    display: none;
-    width: 94%;
-    height: 94%;
+    overflow: hidden;
+    position: absolute;
+    background-color: rgba(134, 233, 240, 0.404);
+    left: -100%;
+    width: 90%;
+    height: 90%;
+    transition: .3s ease;
+}
+
+.conocimientoItems:hover .infoCono {
+    display: block;
+    left: 5%;
+}
+
+.barraConocimiento {
+    position: inherit;
+    width: 100%;
+    bottom: -100%;
+    background-color: rgba(56, 230, 94, 0.582);
+    transition: .6s ease-in-out;
+}
+
+.conocimientoItems:hover .barraConocimiento {
+    bottom: 0%;
 }
 
 /* TITULOS */
@@ -153,10 +175,11 @@ h3 {
 
 .imgProyectos {
     height: 260px;
+    background-color: #4dd4ac;
 }
 
 .imgProyectos:hover {
-    padding: .3%;
+    padding: 1%;
     transition: .3s;
 }
 
