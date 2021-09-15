@@ -146,7 +146,7 @@ h3 {
     text-align: center;
     font-size: 25px;
     color: rgb(5, 43, 48);
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 /* TITULOS */
@@ -244,6 +244,9 @@ h3 {
     .imgPerfil {
         width: 90%;
         margin: 5%;
+    }
+    .pConociminetos {
+        display: none;
     }
 }
 
